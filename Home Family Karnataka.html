@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="javascript/Holiday Days.js"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Home family mumbai.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+
+
+
+        .row {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body background='https://wonderfulengineering.com/wp-content/uploads/2016/01/beach-wallpaper-28.jpg'>
+
+
+    <header class="sticky-top">
+
+        <nav class="menu">
+            <input id="menu__toggle" type="checkbox" class='menu__toggle' />
+            <label for="menu__toggle" class="menu__toggle-label">
+                <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                    <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+                </svg>
+                <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                    <path
+                        d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </label>
+
+
+
+            <ol class='menu__content'>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun()">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun2()">Contact</a>
+                </li>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun3()">About Us</a>
+                </li>
+                <!-- <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun4()">login</a>
+                </li> -->
+            </ol>
+
+            <div class="img">
+                <img src="https://media2.giphy.com/media/toelXGUsYD6vtCN408/giphy.gif" alt="" width="60px"
+                    height="60px">
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content">
+        <center>
+            <h1>Karnataka Hotel Info</h1>
+        </center>
+
+        <div>
+
+            <div class="row">
+                <div class="col-4">
+
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/178826648.jpg?k=8590ce4c6afcfd5ceaa7664f95bea5428a4e0ee05ef10f03f6f774a5854acb9f&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4000()">
+                                <h1>ITC Gardenia, a Luxury Collection Hotel, Bengaluru</h1>
+                                <p>₹ 13,000 - ₹ 20,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/68575709.jpg?k=c7f636d2959486f76caa7224697a0ce0d03ab21e7d10aea69b669bfd1ca4c2ce&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4001()">
+                                <h1>Taj Bangalore</h1>
+                                <p>₹ 12,000 - ₹ 17,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/355160188.jpg?k=f52504fcf75a032175c9bf3a3b2ce3c4db6e52f02a9070c7d603213096232979&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4002()">
+                                <h1>Hyatt Place Hampi</h1>
+                                <p>₹ 6,000 - ₹ 10,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/98764292.jpg?k=97754dd93b59ee18cd31abc42fc813022239a6a09c082aae0de2e019f758ccf9&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4003()">
+                                <h1>Hotel Naveen Lakeside</h1>
+                                <p>₹ 3,000 - ₹ 8,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/249150907.jpg?k=2ca1901a5b4eed8ed970095ad07de8d15a8b65f34448311f47123573c5c89b01&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4004()">
+                                <h1>JW Marriott Hotel Bengaluru</h1>
+                                <p>₹ 12,000 - ₹ 17,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/48254908.jpg?k=ce6fb7f862332a9baf41424b06770027cdc104b3201dacf9fd20a7bbf6df295c&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun4005()">
+                                <h1>The Leela Palace Bengaluru</h1>
+                                <p>₹ 15,000 - ₹ 22,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

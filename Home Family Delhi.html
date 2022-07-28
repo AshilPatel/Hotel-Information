@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="javascript/Holiday Days.js"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Home family mumbai.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+
+
+
+        .row {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body background='https://wonderfulengineering.com/wp-content/uploads/2016/01/beach-wallpaper-28.jpg'>
+
+
+    <header class="sticky-top">
+
+        <nav class="menu">
+            <input id="menu__toggle" type="checkbox" class='menu__toggle' />
+            <label for="menu__toggle" class="menu__toggle-label">
+                <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                    <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+                </svg>
+                <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+                    <path
+                        d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </label>
+
+
+
+            <ol class='menu__content'>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun()">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun2()">Contact</a>
+                </li>
+                <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun3()">About Us</a>
+                </li>
+                <!-- <li class="menu-item">
+                    <a aria-current="page" href="#" onclick="fun4()">login</a>
+                </li> -->
+            </ol>
+
+            <div class="img">
+                <img src="https://media2.giphy.com/media/toelXGUsYD6vtCN408/giphy.gif" alt="" width="60px"
+                    height="60px">
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content">
+        <center>
+            <h1>Delhi Hotel Info</h1>
+        </center>
+
+        <div>
+
+            <div class="row">
+                <div class="col-4">
+
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/104471019.jpg?k=0559883ce0c1b10cd4d8d2b1fd67dcb03135ba886d6eddb6d4b6bf00695e35e7&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5000()">
+                                <h1>ITC Grand Bharat, a Luxury Collection Retreat, Gurgaon</h1>
+                                <p>₹ 5,000 - ₹ 8,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/369807671.jpg?k=8c2e91587ad4e77cecffeb204aff53af872c3d14d0602ed220559bd1ba233af1&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5001()">
+                                <h1>The Taj Mahal Hotel New Delhi</h1>
+                                <p>₹ 6,000 - ₹ 8,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/366444791.jpg?k=28695e91e5867a0b2b9188149ee761f4a6dc7a619515b16ca7f94e14f252d90d&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5002()">
+                                <h1>Hyatt Regency, Delhi</h1>
+                                <p>₹ 4,000 - ₹ 7,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/332075958.jpg?k=958c586b81ea32476c0527078e4f935fd5446c4ab565904f5a390d8106ca60de&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5003()">
+                                <h1>Hilton Garden Inn New Delhi/Saket</h1>
+                                <p>₹ 3,000 - ₹ 6,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/47096340.jpg?k=e9f5bfe7f13d5f19e08498c3b01dca92205ed944582cc06d03c151369aa695f8&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5004()">
+                                <h1>Eros Hotel New Delhi, Nehru Place</h1>
+                                <p>₹ 5,000 - ₹ 7,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/268437803.jpg?k=05a0537b520a11e881dfb29ea6a4300f2475023df9e5215728c00e27bb3d40b7&o=&hp=1"
+                                    alt="Avatar" style="width:300px;height:300px;" class="card-img1">
+                            </div>
+                            <div class="flip-card-back" onclick="fun5005()">
+                                <h1>The Leela Palace New Delhi</h1>
+                                <p>₹ 3,000 - ₹ 6,000 per night</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
