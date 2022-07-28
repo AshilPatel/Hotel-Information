@@ -1,0 +1,37 @@
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-size: cover;
+}
+
+.row{
+    margin: 1%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.img-fluid{
+    height: 550px;
+
+}
+.card-img1{
+    height: 271px;
+}
